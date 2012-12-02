@@ -1,7 +1,11 @@
 Posts::Application.routes.draw do
-  resources :posts
+  resources :reviews
 
-   root :to => "home#index"
+  resources :posts do
+    resources :reviews
+  end
+
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
