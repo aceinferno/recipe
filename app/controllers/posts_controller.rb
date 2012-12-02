@@ -36,7 +36,6 @@ class PostsController < ApplicationController
   def edit
     @post = Post.find(params[:id])
   end
-
   # POST /posts
   # POST /posts.json
   def create

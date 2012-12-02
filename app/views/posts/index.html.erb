@@ -1,4 +1,4 @@
-<h1>Listing posts</h1>
+<h1>Your recipe list!</h1>
 
 <table>
   <tr>
@@ -25,4 +25,4 @@
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+<%= button_to "New Recipe", new_post_path, :method => "get" %>
